@@ -1,38 +1,99 @@
+body{
+  background-color: white;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
+  width: 90%;
+  max-width: 1300px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > div,
+.App .App-footer,
+.App .App-header{
+  background-color: white;
+  color: wheat;
+  padding: 20px;
+  border-radius: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .App-header{
+  color: white;
+  background-color: #132E32;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App .sidebar{
+  background-color: #1D84B5;
+  grid-column: 1 / 2;
+  text-align: left;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: none;
+  border-bottom: 2px solid;
+  border-right: 1px solid;
+  grid-row: span 2;
+}
+.App .habilidades{
+  height: 100%;
+  width: auto;
+  max-height: 1000px;
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #53A2BE;
+  border: none;
+  border-bottom: 2px solid;
+  border-right: 1px solid;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.App .info1{
+  color: black;
+  grid-column-start: 2;
+  grid-column-end: 3;  
+  background-color: #53A2BE;
+  border-bottom: 2px solid wheat;
+  border-right: 1px solid wheat;
 }
 
-.App-link {
-  color: #61dafb;
+.App .info2{ 
+  color: black;
+  background-color: #53A2BE;
+  border-bottom: 2px solid wheat;
+  border-right: 1px solid wheat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .App-footer{
+  color: wheat;
+  grid-row: span 1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-color: #4C4D4A;  
+  border-bottom: 2px solid;
+  border-right: 1px solid;
 }
+
+.App .profilepicture{
+  background-color: black;
+  height: 400px;
+  max-height: 500px;
+  width: auto;
+  background-image: url("./images/profilepicture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
