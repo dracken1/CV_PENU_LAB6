@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
 import { ResponsiveBullet } from '@nivo/bullet';
+import {useState} from 'react';
 import graph from './graph';
 
-function App() {
+function App() {  
+  console.log();
   return (
     <div className="App">
       <header className="App-header">

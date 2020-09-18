@@ -44,6 +44,7 @@ body{
   border-right: 1px solid;
   grid-row: span 2;
 }
+
 .App .habilidades{
   height: 100%;
   width: auto;
